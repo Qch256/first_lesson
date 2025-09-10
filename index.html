@@ -26,8 +26,12 @@
           </div>
         </div>
           
-        <div class="row" style="background-color: green; border: 1px solid black; height: 50px">
+        <div class="row" style="background-color: green; border: 1px solid black; height: 150px">
             Text
+          <h1 id="header"></h1>
+          <button onclick="go()">+1</button>
+
+
         </div>
 
         <div class="row" style="height: 50px">
@@ -42,5 +46,15 @@
               </div>
         </div>
       </div>
+
+      <script>
+        var x = 1;
+      
+        function go()
+        {
+          x+=1;
+          header.innerHTML=x;
+        }
+      </script>
 </body>
 </html>
